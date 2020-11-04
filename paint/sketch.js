@@ -1,6 +1,6 @@
 let type = "pen";
 let scribble = new Scribble();  
-scribble.bowing = 25;          // changes the bowing of lines
+scribble.bowing = 1;          // changes the bowing of lines
 scribble.roughness = 1;   
 let output, penBtn, eraserBtn, squareBtn, circleBtn, clearBtn;
 let pix2pix, modelReady = false, isTransfering = false;
@@ -59,8 +59,65 @@ function setup() {
     circleBtn.mousePressed(function() {
         type = "circle";
     });
+    
+////////////////////  Bowing Controls /////////////////////
+    bowOne = select('#bowOne');
+    bowOne.mousePressed(function() {
+        scribble.bowing = 1;
+    });
+    
+    bowTwo = select('#bowTwo');
+    bowTwo.mousePressed(function() {
+        scribble.bowing = 5;
+    });
+    
+    bowThree = select('#bowThree');
+    bowThree.mousePressed(function() {
+        scribble.bowing = 10;
+    });
+    
+    bowFour = select('#bowFour');
+    bowFour.mousePressed(function() {
+        scribble.bowing = 15;
+    });
+    
+    bowFive = select('#bowFive');
+    bowFive.mousePressed(function() {
+        scribble.bowing = 20;
+    });
+    
+    
+    ////////////////////  Roughness Controls /////////////////////
 
-
+    rouOne = select('#rouOne');
+    rouOne.mousePressed(function() {
+        scribble.roughness = 1;
+    });
+    
+    rouTwo = select('#rouTwo');
+    rouTwo.mousePressed(function() {
+        scribble.roughness = 2;
+    });
+    
+    rouThree = select('#rouThree');
+    rouThree.mousePressed(function() {
+        scribble.roughness = 4;
+    });
+    
+    rouFour = select('#rouFour');
+    rouFour.mousePressed(function() {
+        scribble.roughness = 8;
+    });
+    
+    rouFive = select('#rouFive');
+    rouFive.mousePressed(function() {
+        scribble.roughness = 10;
+    });
+    
+    
+    
+    
+    
     // Set stroke to black
     stroke(0);
     pixelDensity(1);
