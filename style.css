@@ -7,8 +7,9 @@ body {
 }
 
 
+
 h1{
-    
+    font-family: 'Itim', cursive !important;
     text-align: center;
     font-size: 100px !important;
     color: #5E4B56;
@@ -16,7 +17,9 @@ h1{
     
 }
 
-
+.btn{
+    color: white !important;
+}
 .box{
     display: inline-block
      border: solid black;
@@ -30,7 +33,7 @@ h1{
 
 
 /*Cartoon Border*/
-canvas {
+canvas.sketch {
     display: block;
      padding: 10px;
     margin-top: -2px;
@@ -46,19 +49,30 @@ canvas {
    
 }
 
+canvas.landing{
+    
+    position: absolute;
+  z-index: 2;
+  pointer-events: none;
+    margin-top: -30px;
+}
+
+
+
+
 img {
     
-    display: block;
-    margin-top: -2px;
-    margin-bottom: -2px;
-    margin-left: -18px;
-    margin-right: -18px;
-     border: solid black;
-    border-color: black;
-    border-width: 3px 4px 3px 5px;
-    border-radius:95% 4% 92% 5%/4% 95% 6% 95%;
-    background-color: white;
-   padding: 5px;
+    display: block !important;
+    margin-top: -2px !important;
+    margin-bottom: -2px !important;
+    margin-left: -18px !important;
+    margin-right: -18px !important;
+     border: solid black !important;
+    border-color: black !important;
+    border-width: 3px 4px 3px 5px !important;
+    border-radius:95% 4% 92% 5%/4% 95% 6% 95% !important;
+    background-color: white !important;
+    padding: 5px !important;
     
 }
 

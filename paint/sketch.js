@@ -14,10 +14,13 @@ function setup() {
     
     SIZE = windowWidth/2.5;
     w = windowWidth/2;
-    h = windowWidth/2.3;
+    h = windowWidth/2.5;
    
     let sketchBoard = createCanvas(w, h);
     sketchBoard.class('border-box').parent('canvasContainer');
+    
+    const canvasElement = select('canvas');
+    canvasElement.addClass("sketch");
     
     
     // Selcect output div container

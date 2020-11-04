@@ -21,6 +21,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <!-- CSS -->
     <link rel="stylesheet" type="text/css" href="../style.css">
+    <link rel="stylesheet" type="text/css" href="../custom.css">
     <!-- Font -->
     <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
     <meta charset="utf-8" />
@@ -28,7 +29,14 @@
 </head>
 
 <body>
-  <div class= "w-100 mb-5"> 
+    
+     <a href="../index.html">
+            <button  type="button" class="btn btn-primary my-3 mx-3 py-2 px-3" href="../index.html">
+                <i class="fas fa-home fa-lg"></i>
+            </button>
+        </a>
+    
+  <div class= "w-100 mb-3"> 
     
       <h1>Sketch Pix2Pix</h1>
     
@@ -42,19 +50,19 @@
                 
                 <div class="col mt-4 ">
     
-                    <button id="penBtn" type="button" class="btn btn-primary mb-3 mx-2" >
+                    <button id="penBtn" type="button" class="btn btn-warning mb-3 mx-2" >
                         <i class="fas fa-pen-fancy fa-lg"></i>
                     </button>
         
-                    <button id="eraserBtn" type="button" class="btn btn-primary mb-3 mx-2" >
+                    <button id="eraserBtn" type="button" class="btn btn-warning mb-3 mx-2" >
                         <i class="fas fa-eraser fa-lg"></i>
                     </button>
         
-                    <button id="squareBtn" type="button" class="btn btn-primary mb-3 mx-2" >
+                    <button id="squareBtn" type="button" class="btn btn-warning mb-3 mx-2" >
                         <i class="far fa-square fa-lg"></i>
                     </button>
         
-                    <button id="circleBtn" type="button" class="btn btn-primary mb-3 mx-2" >
+                    <button id="circleBtn" type="button" class="btn btn-warning mb-3 mx-2" >
                         <i class="far fa-circle fa-lg"></i>
                     </button>
     
@@ -87,7 +95,7 @@
                     
                 </div>
             
-                <div class="col" id="output"></div>
+                <div class="col box" id="output"></div>
             
             </div>
         

@@ -4,7 +4,7 @@ scribble.bowing = 3;          // changes the bowing of lines
 scribble.roughness = 1;   
 let output, penBtn, eraserBtn, squareBtn, circleBtn, clearBtn;
 let pix2pix, modelReady = false, isTransfering = false;
-
+var img = ['../images/myImage.png', '../images/input.png']
 function preload(){
     
 }
@@ -16,7 +16,11 @@ function setup() {
     let sketchBoard = createCanvas(SIZE, SIZE);
     sketchBoard.class('border-box').parent('canvasContainer');
     
-    inputImg = loadImage('../images/input.png', drawImage);
+    const canvasElement = select('canvas');
+    canvasElement.addClass("sketch");
+    
+    let imgLink = random(img);
+    inputImg = loadImage(imgLink, drawImage);
     
     // Selcect output div container
     output = select('#output');
