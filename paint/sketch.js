@@ -1,7 +1,7 @@
 let type = "pen";
 let scribble = new Scribble();  
-scribble.bowing = 2;          // changes the bowing of lines
-scribble.roughness = 2;   
+scribble.bowing = 25;          // changes the bowing of lines
+scribble.roughness = 1;   
 let output, penBtn, eraserBtn, squareBtn, circleBtn, clearBtn;
 let pix2pix, modelReady = false, isTransfering = false;
 let w,h;
@@ -28,8 +28,9 @@ function setup() {
 
     pixelDensity(1);
     background(255);
-    gui = createGui();
     
+    //Create Sliders
+   
     // Select 'transfer' button html element
     transferBtn = select('#transferBtn');
     
@@ -94,6 +95,8 @@ function draw() {
         
             
   	}
+    
+    
 
     
 }
