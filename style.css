@@ -1,9 +1,62 @@
-html, body {
-  margin: 0;
-  padding: 0;
-  font-family: 'Amatic SC', cursive;
-  background-color: aliceblue;
+body {
+    margin: 20px;
+    padding: 0;
+    font-family: 'Itim', cursive;
+    background-color: aliceblue;
+    background-image: url("images/cute_bg.jpg");
 }
+
+
+h1{
+    
+    text-align: center;
+    font-size: 100px;
+    color: #5E4B56;
+    text-shadow: 2px 2px 4px #000000;
+    
+}
+
+
+.box{
+    display: inline-block
+     border: solid black;
+    border-color: black;
+/*    padding: 5px;*/
+    margin-bottom: 18px;
+    border-width: 3px 4px 3px 5px;
+    border-radius:95% 4% 92% 5%/4% 95% 6% 95%;
+        transform: rotate(2deg);
+}
+
 canvas {
-  display: block;
+    display: block;
+     padding: 10px;
+    margin-top: -2px;
+     margin-bottom: -5px;
+    margin-left: -18px;
+    margin-right: -18px;
+     border: solid black;
+    border-color: black;
+    border-width: 3px 4px 3px 5px;
+    border-radius:95% 4% 92% 5%/4% 95% 6% 95%;
+   
+    background-color: white;
+   
 }
+
+img {
+    
+    display: block;
+    margin-top: -2px;
+    margin-bottom: -2px;
+    margin-left: -18px;
+    margin-right: -18px;
+     border: solid black;
+    border-color: black;
+    border-width: 3px 4px 3px 5px;
+    border-radius:95% 4% 92% 5%/4% 95% 6% 95%;
+    background-color: white;
+   padding: 5px;
+    
+}
+
