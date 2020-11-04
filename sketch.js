@@ -23,7 +23,7 @@ function setup() {
 //    canvasElement.addClass("landing");
     bg = loadImage('images/cute_bg.jpg');
     // Create the characters.
-  for (let i=0; i<15; i++) {
+  for (let i=0; i<40; i++) {
     circles.push({
       x: random(width), 
       y: random(height),
