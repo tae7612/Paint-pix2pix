@@ -1,0 +1,36 @@
+/* custom.scss */    
+
+/* import the necessary Bootstrap files */
+// Required
+
+@import "node_modules/bootstrap/scss/functions";
+@import "node_modules/bootstrap/scss/variables";
+@import "node_modules/bootstrap/scss/mixins";
+
+/* ------- customize primary buttons -------- */   
+
+$theme-colors: (
+    primary: #83BDD9,
+    
+    secondary: #FAA091,
+    
+    warning: #FCC44D,
+    
+    success: #98CDC5
+    
+
+
+);
+
+//$mynewcolor:#FCC44D;
+//
+//.btn-primary {
+//    @include button-variant($mynewcolor, darken($mynewcolor, 7.5%), darken($mynewcolor, 10%), lighten($mynewcolor,5%), lighten($mynewcolor, 10%), darken($mynewcolor,30%));
+//}
+//
+//.btn-outline-primary {
+//    @include button-outline-variant($mynewcolor, #222222, lighten($mynewcolor,5%), $mynewcolor);
+//}
+
+/* finally, import Bootstrap to set the changes! */
+@import "node_modules/bootstrap/scss/bootstrap";
