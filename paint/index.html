@@ -26,51 +26,67 @@
 </head>
 
 <body>
-  <div class= "w-100 mb-5"> 
+  <div class= "w-100 mb-3"> 
     
       <h1>Sketch Paint!</h1>
     
     </div>
     
-    
-    <div class = "row row-cols-1 ">
-                
-        <div class="col mt-4 ">
-    
-            <button id="penBtn" type="button" class="btn btn-primary mb-3 mx-2" >
-                <i class="fas fa-pen-fancy fa-lg"></i>
-            </button>
+    <div class="container">
+    <div class = "row row justify-content-around  ">
         
-            <button id="eraserBtn" type="button" class="btn btn-primary mb-3 mx-2" >
-                <i class="fas fa-eraser fa-lg"></i>
-            </button>
-        
-            <button id="squareBtn" type="button" class="btn btn-primary mb-3 mx-2" >
-                <i class="far fa-square fa-lg"></i>
-            </button>
-        
-            <button id="circleBtn" type="button" class="btn btn-primary mb-3 mx-2" >
-                <i class="far fa-circle fa-lg"></i>
-            </button>
-    
-        </div>
-    
-                
-        <div class=" col box mx-4">
+         <div class=" col-8 box">
                 
             <div id="canvasContainer"></div>
                     
         </div>
                 
-                
-                
-        <div class="col mb-5" id="btnContainer" class="flex flex-space-between">
-            <button type="button" class="btn btn-danger mx-3 px-4" id="clearBtn">Clear</button>
-            <button type="button" class="btn btn-success mx-3 px-4" id="transferBtn" >Transfer</button>
-        </div>
-                
-                
+        <div class="col-4">
+            
+            <div class="container">
+                <div class="row row-cols-1">
+                    <div class ="col">
+                    <div class="container">
+                        <div class="row row-cols-3 justify-content-between">
+                            
+                            <button id="penBtn" type="button" class="btn btn-primary mb-3 mx-2 col" >
+                                <i class="fas fa-pen-fancy fa-lg"></i>
+                            </button>
+        
+                            <button id="eraserBtn" type="button" class="btn btn-primary mb-3 mx-2 col" >
+                                <i class="fas fa-eraser fa-lg"></i>
+                            </button>
+        
+                            <button id="squareBtn" type="button" class="btn btn-primary mb-3 mx-2 col" >
+                                <i class="far fa-square fa-lg"></i>
+                            </button>
+        
+                            <button id="circleBtn" type="button" class="btn btn-primary mb-3 mx-2 col" >
+                                <i class="far fa-circle fa-lg"></i>
+                            </button>
+            
+                        </div>
+                        
+                    </div>
+                    </div>
+                    
+                    <button type="button" class="btn btn-danger col" id="clearBtn">Clear</button>
+                    
+                </div>
+            
+            
+            
+            
+            </div>
     
+           
+             
+    
+        </div>
+           
+    
+    </div>
+        
     </div>
       
    

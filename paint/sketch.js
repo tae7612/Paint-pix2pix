@@ -1,9 +1,10 @@
 let type = "pen";
 let scribble = new Scribble();  
-scribble.bowing = 3;          // changes the bowing of lines
-scribble.roughness = 1;   
+scribble.bowing = 2;          // changes the bowing of lines
+scribble.roughness = 2;   
 let output, penBtn, eraserBtn, squareBtn, circleBtn, clearBtn;
 let pix2pix, modelReady = false, isTransfering = false;
+let w,h;
 
 function preload(){
     
@@ -11,9 +12,11 @@ function preload(){
 
 function setup() {
     
-    SIZE = windowWidth/2;
+    SIZE = windowWidth/2.5;
+    w = windowWidth/2;
+    h = windowWidth/2.3;
    
-    let sketchBoard = createCanvas(SIZE, SIZE);
+    let sketchBoard = createCanvas(w, h);
     sketchBoard.class('border-box').parent('canvasContainer');
     
     
@@ -66,7 +69,6 @@ function setup() {
 }
 
 function draw() {
-    fill("black");
     stroke("black");
     if(mouseIsPressed){
   	//stroke(c,75,100)
@@ -92,11 +94,7 @@ function draw() {
         
             
   	}
-    
-    
-    
-       
-    
+
     
 }
 
@@ -104,5 +102,11 @@ function draw() {
 // Clear the canvas
 function clearCanvas() {
   background(255);
+}
+
+
+function windowResized() {
+    resizeCanvas(windowWidth/2, windowWidth/2.3);
+    background(255);
 }
 
